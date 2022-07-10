@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МЛС: Форс</title>
     <link rel="icon" href="img/icon/green.svg">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/control.css">
     <link rel="stylesheet" href="css/style_for_table.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
@@ -18,13 +18,14 @@
             <div class="header">
                 <ul>
                     <li>
-                        <button class="plan_butt_off">
+                        <button class="plan_butt_on">
                             <div class="item"><img src="img/status/кружок с галочкой.svg" alt="работает"></div>
                             <div class="item"><img src="img/status/лазер.svg" alt="лазер"></div>
                             <div class="item">Контроль</div>
                         </button>
+                    </li>
                     <li>
-                        <button class="plan_butt_on">
+                        <button class="plan_butt_off">
                             Оперативное<br>планирование
                         </button>
                     </li>
@@ -43,9 +44,14 @@
                     </ul>
                 </div>
             </div>
-            <div class="manual_control">
-                <label>Ручное управление</label>
-                <input type="checkbox" checked>
+            <div class="sorted_menu">
+                <button>
+                    Аппарат
+                    <ul class="menu">
+                        <li>День</li>
+                        <li>Час</li>
+                    </ul>
+                </button>
             </div>
             <div class="table-wrapper">
                 <div class="table-scroll">
@@ -175,18 +181,6 @@
 
         </div>
     </header>
-    <footer id="footer" class="footer">
-        <div class="footer-wrapper">
-            <button class="button_stop">
-                Остановить измерения
-            </button>
-            <div class="footer-text">
-                <p class="footer-text__el">Космический аппарат 6</p>
-                <p class="footer-text__el">Время сеанса: 3:21</p>
-                <p class="footer-text__el">Измерений: 1896 (+18/сек)</p>
-            </div>
-        </div>
-    </footer>
 </body>
 
 </html>

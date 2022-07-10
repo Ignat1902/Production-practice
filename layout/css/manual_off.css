@@ -56,13 +56,17 @@ ul {
     margin-right: 7px;
 }
 
+.item {
+    margin-right: 5px;
+    display: inline-flex;
+}
+
 .plan_butt_on {
     font-size: 20px;
     color: #FFFF;
     background: #4669E5;
     border-radius: 5px;
     border-style: none;
-    padding: 0px;
     width: 206px;
     height: auto;
     margin-right: 20px;
@@ -70,12 +74,14 @@ ul {
 }
 
 .plan_butt_off {
+    align-items: center;
+    display: inline-flex;
     font-size: 20px;
     background: #FFFF;
     border-radius: 5px;
     border: 2px solid #4669E5;
     padding: 0px;
-    width: 206px;
+    width: auto;
     height: auto;
     margin-right: 20px;
     padding: 7px 24px 7px 24px;
