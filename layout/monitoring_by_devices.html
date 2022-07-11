@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МЛС: Форс</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/icon/green.svg">
     <link rel="stylesheet" href="css/control.css">
     <link rel="stylesheet" href="css/style_for_table.css">
@@ -45,134 +46,158 @@
                 </div>
             </div>
             <div class="sorted_menu">
-                <button>
-                    Аппарат
-                    <ul class="menu">
-                        <li>День</li>
-                        <li>Час</li>
+                <div class="dropdown">
+                    <button class="dropbtn">Аппарат <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">День</a>
+                        <a href="#">Час</a>
+                    </div>
+                </div>
+                <div>
+                    <ul class="number_page">
+                        <li>
+                            1
+                        </li>
+                        <li>
+                            2
+                        </li>
+                        <li>
+                            3
+                        </li>
+                        <li>
+                            4
+                        </li>
+                        <li>
+                            <img src="img/icon/стрелка.svg">
+                        </li>
+                        <li>
+                            <img src="img/icon/двойная стрелка.svg">
+                        </li>
+                        <div class="text">
+                            <p>Показать:</p>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn">4 <i class="fa fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">5</a>
+                                <a href="#">6</a>
+                            </div>
+                        </div>
                     </ul>
-                </button>
+                </div>
             </div>
+
             <div class="table-wrapper">
                 <div class="table-scroll">
                     <div class="table-placeholder"></div>
-                    <table>
+                    <table class="main_table">
                         <tbody>
                             <thead>
                                 <tr>
+                                    <th>Состояние</th>
                                     <th>Название КА</th>
-                                    <th>Видимость КА<br>с - до</th>
-                                    <th>Облачность<br>в направлении КА</th>
-                                    <th>Результаты измерений</th>
+                                    <th>Зона видимости</th>
+                                    <th>Время измерений</th>
+                                    <th>Результат измерений</th>
                                 </tr>
                             </thead>
                             <tr>
+                                <td><img src="img/icon for table/облако.svg"></td>
                                 <td>Космический аппарат 1</td>
                                 <td>10:15 - 13:00</td>
-                                <td><img src="img/icon for table/облако.svg"></td>
-                                <td>Время: 12:05 - 12:07;Длит.:2:14; 0 ответов</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
+                                <td><img src="img/icon for table/облако.svg"></td>
                                 <td>Космический аппарат 2</td>
-                                <td>12:05 - 14:50</td>
-                                <td><img src="img/icon for table/облако.svg"></td>
-                                <td>Время: 11:12 - 11:16; Длит.: 4:10; 1358 ответов</td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
+                                <td><img src="img/icon for table/солнце.svg"></td>
                                 <td>Космический аппарат 3</td>
-                                <td>9:10 - 11:30</td>
-                                <td></td>
-                                <td>Время: 11:12 - 11:16; Длит.: 4:10; 1358 ответов</td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
+                                <td><img src="img/icon for table/дождь.svg"></td>
                                 <td>Космический аппарат 4</td>
-                                <td>14:20 - 18:50</td>
-                                <td></td>
-                                <td></td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
+                                <td><img src="img/icon for table/солнце.svg"></td>
                                 <td>Космический аппарат 5</td>
-                                <td>10:15 - 13:10</td>
-                                <td><img src="img/icon for table/солнце.svg"></td>
-                                <td></td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
+                                <td><img src="img/icon for table/солнце.svg"></td>
                                 <td>Космический аппарат 6</td>
-                                <td>14:50 - 17:20</td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
+                            </tr>
+                            <tr>
                                 <td><img src="img/icon for table/солнце.svg"></td>
-                                <td>Идут измерения...</td>
-                            </tr>
-                            <tr>
                                 <td>Космический аппарат 7</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
+                                <td><img src="img/icon for table/облако.svg"></td>
                                 <td>Космический аппарат 8</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
+                                <td><img src="img/icon for table/облако.svg"></td>
                                 <td>Космический аппарат 9</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
+                                <td><img src="img/icon for table/облако.svg"></td>
                                 <td>Космический аппарат 10</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
+                                <td><img src="img/icon for table/солнце.svg"></td>
                                 <td>Космический аппарат 11</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
+                                <td><img src="img/icon for table/солнце.svg"></td>
                                 <td>Космический аппарат 12</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
+                                <td><img src="img/icon for table/дождь.svg"></td>
                                 <td>Космический аппарат 13</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                             <tr>
-                                <td>Космический аппарат 13</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Космический аппарат 13</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Космический аппарат 13</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Космический аппарат 13</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>Космический аппарат 13</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td><img src="img/icon for table/облако.svg"></td>
+                                <td>Космический аппарат 14</td>
+                                <td>10:15 - 13:00</td>
+                                <td>10:35 - 10:38; 180 сек</td>
+                                <td>1358 ответов</td>
                             </tr>
                         </tbody>
                     </table>
