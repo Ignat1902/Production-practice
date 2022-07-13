@@ -1,8 +1,16 @@
+@font-face {
+    font-family: "Inter";
+    src: url("/layout/fonts/static/Inter-Regular.ttf") format("ttf");
+}
+
 .container {
-    margin: 31px 50px 0 50px;
+    margin: 0 50px 0 50px;
 }
 
 .header {
+    margin-top: auto;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -161,7 +169,7 @@ a {
 
 .sorted_menu {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .number_page {
@@ -195,4 +203,9 @@ a {
     text-align: center;
     margin-right: 5px;
     margin-left: 24px;
+}
+
+.scroll {
+    align-items: center;
+    margin: auto;
 }

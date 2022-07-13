@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МЛС: Форс</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="img/icon/green.svg">
+    <link rel="stylesheet" href="css/control.css">
+    <link rel="stylesheet" href="css/table_day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<div class="main">
+    <div class="header">
+        <ul>
+            <li>
+                <button class="plan_butt_on">
+                    <div class="item"><img src="img/status/кружок с галочкой.svg" alt="работает"></div>
+                    <div class="item"><img src="img/status/лазер.svg" alt="лазер"></div>
+                    <div class="item">Контроль</div>
+                </button>
+            </li>
+            <li>
+                <button class="plan_butt_off">
+                    Оперативное<br>планирование
+                </button>
+            </li>
+            <li>
+                <button class="plan_butt_off">
+                    Долгосрочное<br>планирование
+                </button>
+            </li>
+        </ul>
+        <div class=user_block>
+            <ul class="user_info">
+                <li id="avatar">
+                    <img src="img/icon/user_photo.svg" alt="аватар">
+                </li>
+                <li class="control_text"> <a href="#">Петров Иван</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="sorted_menu">
+            <div class="dropdown">
+                <button class="dropbtn">День<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Час</a>
+                    <a href="#">Аппарат</a>
+                </div>
+            </div>
+            <div class="scroll">
+                <img src="img/скролл.svg">
+            </div>
+
+        </div>
+
+        <div class="table-wrapper">
+            <div class="table-scroll">
+                <div class="table-placeholder"></div>
+                <table class="main_table">
+
+                    <tr>
+                        <th rowspan="2">Название КА</th>
+                        <th colspan="5" class="month">Апрель</th>
+                        <th colspan="5" class="month">Май</th>
+                        <th colspan="5" class="month">Июнь</th>
+                    </tr>
+                    <tr>
+                        <th class="number">1</th>
+                        <th class="number">2</th>
+                        <th class="number">3</th>
+                        <th class="number">4</th>
+                        <th class="number">5</th>
+                        <th class="number">6</th>
+                        <th class="number">7</th>
+                        <th class="number">8</th>
+                        <th class="number">9</th>
+                        <th class="number">10</th>
+                        <th class="number">11</th>
+                        <th class="number">12</th>
+                        <th class="number">13</th>
+                        <th class="number">14</th>
+                        <th class="number">15</th>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 1</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 2</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 4</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 5</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 6</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 7</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 8</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 9</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 10</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 11</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 12</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+                    <tr>
+                        <td>Космический аппарат 13</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                        <td>1/3</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+</html>
